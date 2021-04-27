@@ -9,7 +9,9 @@ app = Flask(__name__)
 def hello():
     fight_instance = Fight()
 
-    return str(fight_instance.player.abilities)
+    fight_instance.addRandomCharacter()
+
+    return str(fight_instance.party.members[0].abilities)
 
 if __name__ == "__main__":
   app.run()

@@ -1,4 +1,4 @@
-playerClasses = [
+characterTypes = [
     {
         'NAME': 'Mage',
         'ATK': 5, 

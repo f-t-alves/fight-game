@@ -1,4 +1,4 @@
-playerAbilities = [
+characterAbilities = [
     {
         'NAME': 'Melee Attack',
         'DMG': 2,
