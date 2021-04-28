@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+    <div>
+        <table class="table table-striped" style="width:100%">
+          <thead class="thead-dark">
+            <tr>
+              <th>Party member</th>
+              <th>Class</th>
+              <th>HP</th>
+              <th>Level</th>
+              <th>XP</th>
+            </tr>
+          </thead>
+          {% for member in party_list %}
+          <tr>
+            <td>{{ member["name"] }}</td>
+            <td>{{ member["type"] }}</td>
+            <td>{{ member["hp"] }}</td>
+            <td>{{ member["level"]}}</td>
+            <td>{{ member["xp"]}}</td>
+          </tr>
+          {% endfor %}
+        </table>
+    </div>
+{% endblock %}

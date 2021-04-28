@@ -1,7 +1,14 @@
+cachelib==0.1.1
 click==7.1.2
+cs50==6.0.4
 Flask==1.1.2
+Flask-Session==0.3.2
+greenlet==1.0.0
 itsdangerous==1.1.0
 Jinja2==2.11.3
 MarkupSafe==1.1.1
 python-dotenv==0.17.0
+SQLAlchemy==1.4.11
+sqlparse==0.4.1
+termcolor==1.1.0
 Werkzeug==1.0.1
