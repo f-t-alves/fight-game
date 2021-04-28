@@ -12,9 +12,9 @@ class Character:
 
         # Character Class
         self.type = chosenClass
-        for type in characterTypes:
-            if chosenClass in type['NAME']:
-                self.stats = type
+        for typeStats in characterTypes:
+            if chosenClass in typeStats['NAME']:
+                self.stats = typeStats
                 break
 
         # Populate abilities
@@ -32,7 +32,7 @@ class Character:
         self.hp = self.hpMax
 
         # Status
-        self.status = None
+        self.status = []
 
         # Backpack
         self.pack = {}
