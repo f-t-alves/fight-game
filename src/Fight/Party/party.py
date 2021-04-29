@@ -1,4 +1,4 @@
-from src.Characters.character import Character
+from src.Fight.Characters.character import Character
 
 class Party:
 

@@ -1,6 +1,6 @@
 import random
 
-from src.Monsters.monster_types import monsterTypes
+from src.Fight.Monsters.monster_types import monsterTypes
 
 class Monster:
 

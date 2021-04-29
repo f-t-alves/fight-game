@@ -1,7 +1,7 @@
 import random
 
-from src.Characters.character_classes import characterTypes
-from src.ItemsAbilities.character_abilities import characterAbilities
+from src.Fight.Characters.character_classes import characterTypes
+from src.Fight.ItemsAbilities.character_abilities import characterAbilities
 
 class Character:
 

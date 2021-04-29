@@ -1,7 +1,7 @@
 import random
 
-from src.Party.party import Party
-from src.Characters.character import Character
+from src.Fight.Party.party import Party
+from src.Fight.Characters.character import Character
 
 class Fight:
     def __init__(self):

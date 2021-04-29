@@ -6,8 +6,6 @@ from cs50 import SQL
 
 #from helpers import login_required
 
-from src.fight import Fight
-
 app = Flask(__name__)
 
 # Ensure templates are auto-reloaded
@@ -22,17 +20,7 @@ Session(app)
 # Configure SQLite database
 db = SQL("sqlite:///main_db.db")
 
-from src.helpers import *
-
-@app.route("/")
-@login_required
-def index():
-    fight_instance = Fight()
-
-    fight_instance.addRandomCharacter()
-
-    return render_template("home.html", party_list=fight_instance.party.members)
-
+from src.Routes.routes import *
 
 if __name__ == "__main__":
   app.run()
